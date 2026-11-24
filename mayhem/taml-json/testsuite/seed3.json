@@ -1,0 +1,12 @@
+{
+    "ImageAsset": {
+        "Name": "Seed3",
+        "Name": "Seed3",
+        "AssetName": "img",
+        "ImageFile": "@assetFile=/mayhem/x.png",
+        "CellWidth": "16",
+        "CellCountX": "2",
+        "CellHeight": "16",
+        "CellCountY": "2"
+    }
+}

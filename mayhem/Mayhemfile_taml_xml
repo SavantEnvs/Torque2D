@@ -1,0 +1,9 @@
+project: savantenvs/Torque2D
+target: taml-xml
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/taml-xml/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_taml_xml
+    libfuzzer: true
+    timeout: 10

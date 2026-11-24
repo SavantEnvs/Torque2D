@@ -1,0 +1,9 @@
+project: savantenvs/Torque2D
+target: taml-binary
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/taml-binary/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_taml_binary
+    libfuzzer: true
+    timeout: 10

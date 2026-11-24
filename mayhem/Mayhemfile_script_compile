@@ -1,0 +1,9 @@
+project: savantenvs/Torque2D
+target: script-compile
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/script-compile/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_script_compile
+    libfuzzer: true
+    timeout: 10

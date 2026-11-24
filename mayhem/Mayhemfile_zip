@@ -1,0 +1,9 @@
+project: savantenvs/Torque2D
+target: zip
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/zip/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_zip
+    libfuzzer: true
+    timeout: 10

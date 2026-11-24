@@ -1,0 +1,9 @@
+project: savantenvs/Torque2D
+target: gfont-uft
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/gfont-uft/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_gfont_uft
+    libfuzzer: true
+    timeout: 10

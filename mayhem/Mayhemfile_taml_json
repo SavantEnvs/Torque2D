@@ -1,0 +1,9 @@
+project: savantenvs/Torque2D
+target: taml-json
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/taml-json/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_taml_json
+    libfuzzer: true
+    timeout: 10

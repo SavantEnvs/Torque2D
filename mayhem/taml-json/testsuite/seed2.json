@@ -1,0 +1,16 @@
+{
+    "SimSet": {
+        "Name": "Seed2",
+        "Name": "Seed2",
+        "ScriptObject[0]": {
+            "Name": "Child1",
+            "Name": "Child1",
+            "Value": "3.5"
+        },
+        "ScriptObject[1]": {
+            "Name": "Child2",
+            "Name": "Child2",
+            "class": "Thing"
+        }
+    }
+}

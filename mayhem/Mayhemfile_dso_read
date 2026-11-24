@@ -1,0 +1,9 @@
+project: savantenvs/Torque2D
+target: dso-read
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/dso-read/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_dso_read
+    libfuzzer: true
+    timeout: 10
